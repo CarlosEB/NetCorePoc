@@ -1,0 +1,11 @@
+C:\Users\carlos.barboza\documents\visual studio 2017\Projects\NetCorePoc\NetCorePoc.Infrastructure.CrossCutting.DataAccess\bin\Debug\netcoreapp2.0\NetCorePoc.Infrastructure.CrossCutting.DataAccess.deps.json
+C:\Users\carlos.barboza\documents\visual studio 2017\Projects\NetCorePoc\NetCorePoc.Infrastructure.CrossCutting.DataAccess\bin\Debug\netcoreapp2.0\NetCorePoc.Infrastructure.CrossCutting.DataAccess.dll
+C:\Users\carlos.barboza\documents\visual studio 2017\Projects\NetCorePoc\NetCorePoc.Infrastructure.CrossCutting.DataAccess\bin\Debug\netcoreapp2.0\NetCorePoc.Infrastructure.CrossCutting.DataAccess.pdb
+C:\Users\carlos.barboza\documents\visual studio 2017\Projects\NetCorePoc\NetCorePoc.Infrastructure.CrossCutting.DataAccess\bin\Debug\netcoreapp2.0\NetCorePoc.Domain.dll
+C:\Users\carlos.barboza\documents\visual studio 2017\Projects\NetCorePoc\NetCorePoc.Infrastructure.CrossCutting.DataAccess\bin\Debug\netcoreapp2.0\NetCorePoc.Domain.pdb
+C:\Users\carlos.barboza\documents\visual studio 2017\Projects\NetCorePoc\NetCorePoc.Infrastructure.CrossCutting.DataAccess\obj\Debug\netcoreapp2.0\NetCorePoc.Infrastructure.CrossCutting.DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\carlos.barboza\documents\visual studio 2017\Projects\NetCorePoc\NetCorePoc.Infrastructure.CrossCutting.DataAccess\obj\Debug\netcoreapp2.0\NetCorePoc.Infrastructure.CrossCutting.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\carlos.barboza\documents\visual studio 2017\Projects\NetCorePoc\NetCorePoc.Infrastructure.CrossCutting.DataAccess\obj\Debug\netcoreapp2.0\NetCorePoc.Infrastructure.CrossCutting.DataAccess.AssemblyInfoInputs.cache
+C:\Users\carlos.barboza\documents\visual studio 2017\Projects\NetCorePoc\NetCorePoc.Infrastructure.CrossCutting.DataAccess\obj\Debug\netcoreapp2.0\NetCorePoc.Infrastructure.CrossCutting.DataAccess.AssemblyInfo.cs
+C:\Users\carlos.barboza\documents\visual studio 2017\Projects\NetCorePoc\NetCorePoc.Infrastructure.CrossCutting.DataAccess\obj\Debug\netcoreapp2.0\NetCorePoc.Infrastructure.CrossCutting.DataAccess.dll
+C:\Users\carlos.barboza\documents\visual studio 2017\Projects\NetCorePoc\NetCorePoc.Infrastructure.CrossCutting.DataAccess\obj\Debug\netcoreapp2.0\NetCorePoc.Infrastructure.CrossCutting.DataAccess.pdb

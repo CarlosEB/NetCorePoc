@@ -1,0 +1,9 @@
+C:\Users\carlos.barboza\documents\visual studio 2017\Projects\NetCorePoc\NetCorePoc.Domain\bin\Debug\netcoreapp2.0\NetCorePoc.Domain.deps.json
+C:\Users\carlos.barboza\documents\visual studio 2017\Projects\NetCorePoc\NetCorePoc.Domain\bin\Debug\netcoreapp2.0\NetCorePoc.Domain.dll
+C:\Users\carlos.barboza\documents\visual studio 2017\Projects\NetCorePoc\NetCorePoc.Domain\bin\Debug\netcoreapp2.0\NetCorePoc.Domain.pdb
+C:\Users\carlos.barboza\documents\visual studio 2017\Projects\NetCorePoc\NetCorePoc.Domain\obj\Debug\netcoreapp2.0\NetCorePoc.Domain.csproj.CoreCompileInputs.cache
+C:\Users\carlos.barboza\documents\visual studio 2017\Projects\NetCorePoc\NetCorePoc.Domain\obj\Debug\netcoreapp2.0\NetCorePoc.Domain.AssemblyInfoInputs.cache
+C:\Users\carlos.barboza\documents\visual studio 2017\Projects\NetCorePoc\NetCorePoc.Domain\obj\Debug\netcoreapp2.0\NetCorePoc.Domain.AssemblyInfo.cs
+C:\Users\carlos.barboza\documents\visual studio 2017\Projects\NetCorePoc\NetCorePoc.Domain\obj\Debug\netcoreapp2.0\NetCorePoc.Domain.dll
+C:\Users\carlos.barboza\documents\visual studio 2017\Projects\NetCorePoc\NetCorePoc.Domain\obj\Debug\netcoreapp2.0\NetCorePoc.Domain.pdb
+C:\Users\carlos.barboza\Documents\Visual Studio 2017\Projects\NetCorePoc\NetCorePoc.Domain\obj\Debug\netcoreapp2.0\NetCorePoc.Domain.csprojResolveAssemblyReference.cache
