@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  netcorepoc.api:
+    image: netcorepoc.api
+    build:
+      context: ./NetCorePoc
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"

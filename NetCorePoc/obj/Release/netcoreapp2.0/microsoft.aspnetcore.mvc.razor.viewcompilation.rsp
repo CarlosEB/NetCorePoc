@@ -1,0 +1,5 @@
+C:\repository\NetCorePoc\NetCorePoc
+--output-path=obj\Release\netcoreapp2.0\
+--application-name=NetCorePoc.Api
+--content-root=C:\repository\NetCorePoc\NetCorePoc
+--file=

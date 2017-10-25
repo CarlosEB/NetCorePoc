@@ -1,0 +1,11 @@
+C:\repository\NetCorePoc\NetCorePoc.Infrastructure.CrossCutting.Security\bin\Debug\netcoreapp2.0\NetCorePoc.Infrastructure.CrossCutting.Security.deps.json
+C:\repository\NetCorePoc\NetCorePoc.Infrastructure.CrossCutting.Security\bin\Debug\netcoreapp2.0\NetCorePoc.Infrastructure.CrossCutting.Security.dll
+C:\repository\NetCorePoc\NetCorePoc.Infrastructure.CrossCutting.Security\bin\Debug\netcoreapp2.0\NetCorePoc.Infrastructure.CrossCutting.Security.pdb
+C:\repository\NetCorePoc\NetCorePoc.Infrastructure.CrossCutting.Security\bin\Debug\netcoreapp2.0\Microsoft.Extensions.Options.dll
+C:\repository\NetCorePoc\NetCorePoc.Infrastructure.CrossCutting.Security\bin\Debug\netcoreapp2.0\Microsoft.Extensions.Options.xml
+C:\repository\NetCorePoc\NetCorePoc.Infrastructure.CrossCutting.Security\obj\Debug\netcoreapp2.0\NetCorePoc.Infrastructure.CrossCutting.Security.csprojResolveAssemblyReference.cache
+C:\repository\NetCorePoc\NetCorePoc.Infrastructure.CrossCutting.Security\obj\Debug\netcoreapp2.0\NetCorePoc.Infrastructure.CrossCutting.Security.csproj.CoreCompileInputs.cache
+C:\repository\NetCorePoc\NetCorePoc.Infrastructure.CrossCutting.Security\obj\Debug\netcoreapp2.0\NetCorePoc.Infrastructure.CrossCutting.Security.AssemblyInfoInputs.cache
+C:\repository\NetCorePoc\NetCorePoc.Infrastructure.CrossCutting.Security\obj\Debug\netcoreapp2.0\NetCorePoc.Infrastructure.CrossCutting.Security.AssemblyInfo.cs
+C:\repository\NetCorePoc\NetCorePoc.Infrastructure.CrossCutting.Security\obj\Debug\netcoreapp2.0\NetCorePoc.Infrastructure.CrossCutting.Security.dll
+C:\repository\NetCorePoc\NetCorePoc.Infrastructure.CrossCutting.Security\obj\Debug\netcoreapp2.0\NetCorePoc.Infrastructure.CrossCutting.Security.pdb

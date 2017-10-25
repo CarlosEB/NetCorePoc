@@ -1,0 +1,11 @@
+C:\repository\NetCorePoc\NetCorePoc.Infrastructure.CrossCutting.DataAccess\bin\Release\netcoreapp2.0\NetCorePoc.Infrastructure.CrossCutting.DataAccess.deps.json
+C:\repository\NetCorePoc\NetCorePoc.Infrastructure.CrossCutting.DataAccess\bin\Release\netcoreapp2.0\NetCorePoc.Infrastructure.CrossCutting.DataAccess.dll
+C:\repository\NetCorePoc\NetCorePoc.Infrastructure.CrossCutting.DataAccess\bin\Release\netcoreapp2.0\NetCorePoc.Infrastructure.CrossCutting.DataAccess.pdb
+C:\repository\NetCorePoc\NetCorePoc.Infrastructure.CrossCutting.DataAccess\bin\Release\netcoreapp2.0\NetCorePoc.Domain.dll
+C:\repository\NetCorePoc\NetCorePoc.Infrastructure.CrossCutting.DataAccess\bin\Release\netcoreapp2.0\NetCorePoc.Domain.pdb
+C:\repository\NetCorePoc\NetCorePoc.Infrastructure.CrossCutting.DataAccess\obj\Release\netcoreapp2.0\NetCorePoc.Infrastructure.CrossCutting.DataAccess.csprojResolveAssemblyReference.cache
+C:\repository\NetCorePoc\NetCorePoc.Infrastructure.CrossCutting.DataAccess\obj\Release\netcoreapp2.0\NetCorePoc.Infrastructure.CrossCutting.DataAccess.csproj.CoreCompileInputs.cache
+C:\repository\NetCorePoc\NetCorePoc.Infrastructure.CrossCutting.DataAccess\obj\Release\netcoreapp2.0\NetCorePoc.Infrastructure.CrossCutting.DataAccess.AssemblyInfoInputs.cache
+C:\repository\NetCorePoc\NetCorePoc.Infrastructure.CrossCutting.DataAccess\obj\Release\netcoreapp2.0\NetCorePoc.Infrastructure.CrossCutting.DataAccess.AssemblyInfo.cs
+C:\repository\NetCorePoc\NetCorePoc.Infrastructure.CrossCutting.DataAccess\obj\Release\netcoreapp2.0\NetCorePoc.Infrastructure.CrossCutting.DataAccess.dll
+C:\repository\NetCorePoc\NetCorePoc.Infrastructure.CrossCutting.DataAccess\obj\Release\netcoreapp2.0\NetCorePoc.Infrastructure.CrossCutting.DataAccess.pdb

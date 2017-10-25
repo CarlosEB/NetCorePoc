@@ -29,6 +29,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCorePoc.Infrastructure.C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCorePoc.Infrastructure.CrossCutting.Security", "NetCorePoc.Infrastructure.CrossCutting.Security\NetCorePoc.Infrastructure.CrossCutting.Security.csproj", "{DDE7AD8D-16DC-402D-A864-0169DB393A75}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{D7B395B7-699F-41BF-ABBE-64E8BF9E4863}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,10 @@ Global
 		{DDE7AD8D-16DC-402D-A864-0169DB393A75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDE7AD8D-16DC-402D-A864-0169DB393A75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDE7AD8D-16DC-402D-A864-0169DB393A75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7B395B7-699F-41BF-ABBE-64E8BF9E4863}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7B395B7-699F-41BF-ABBE-64E8BF9E4863}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7B395B7-699F-41BF-ABBE-64E8BF9E4863}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7B395B7-699F-41BF-ABBE-64E8BF9E4863}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

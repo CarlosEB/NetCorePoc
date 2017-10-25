@@ -1,0 +1,1 @@
+C:\repository\NetCorePoc\obj\Release\docker-compose.dcproj.CoreCompileInputs.cache

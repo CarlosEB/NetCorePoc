@@ -8,13 +8,13 @@ namespace NetCorePoc.Api
     {
         public static void Main(string[] args)
         {
-            BuildWebHostHttpSys(args).Run();
+            BuildWebHostKestrel(args).Run();
         }
 
         public static IWebHost BuildWebHostKestrel(string[] args) => WebHost.CreateDefaultBuilder(args)
             .UseStartup<Startup>()
             .UseKestrel()
-            .UseUrls("http://localhost:5000")
+            .UseUrls("http://*:5000")
             .Build();
 
         public static IWebHost BuildWebHostHttpSys(string[] args) =>

@@ -1,0 +1,8 @@
+C:\repository\NetCorePoc\NetCorePoc.Domain\bin\Release\netcoreapp2.0\NetCorePoc.Domain.deps.json
+C:\repository\NetCorePoc\NetCorePoc.Domain\bin\Release\netcoreapp2.0\NetCorePoc.Domain.dll
+C:\repository\NetCorePoc\NetCorePoc.Domain\bin\Release\netcoreapp2.0\NetCorePoc.Domain.pdb
+C:\repository\NetCorePoc\NetCorePoc.Domain\obj\Release\netcoreapp2.0\NetCorePoc.Domain.csproj.CoreCompileInputs.cache
+C:\repository\NetCorePoc\NetCorePoc.Domain\obj\Release\netcoreapp2.0\NetCorePoc.Domain.AssemblyInfoInputs.cache
+C:\repository\NetCorePoc\NetCorePoc.Domain\obj\Release\netcoreapp2.0\NetCorePoc.Domain.AssemblyInfo.cs
+C:\repository\NetCorePoc\NetCorePoc.Domain\obj\Release\netcoreapp2.0\NetCorePoc.Domain.dll
+C:\repository\NetCorePoc\NetCorePoc.Domain\obj\Release\netcoreapp2.0\NetCorePoc.Domain.pdb
