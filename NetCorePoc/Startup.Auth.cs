@@ -7,7 +7,7 @@ using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using NetCorePoc.Infrastructure.CrossCutting.Security;
 
-namespace NetCorePoc
+namespace NetCorePoc.Api
 {
     public partial class Startup
     {

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCorePoc", "NetCorePoc\NetCorePoc.csproj", "{203C410D-BF15-41F8-8A02-B45FAD9533C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCorePoc.Api", "NetCorePoc\NetCorePoc.Api.csproj", "{203C410D-BF15-41F8-8A02-B45FAD9533C5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Api", "1 - Api", "{1F5DEA15-4D56-4685-AE57-AE390EBFC7AD}"
 EndProject

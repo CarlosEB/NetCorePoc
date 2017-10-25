@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Server.HttpSys;
 
-namespace NetCorePoc
+namespace NetCorePoc.Api
 {
     public class Program
     {

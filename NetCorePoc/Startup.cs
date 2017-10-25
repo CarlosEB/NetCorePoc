@@ -1,13 +1,11 @@
-﻿using System.IO;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using NetCorePoc.Application.Mapper;
-using NetCorePoc.Infrastructure.CrossCutting.IoC;
 using NetCorePoc.Infrastructure.CrossCutting.Security;
 
-namespace NetCorePoc
+namespace NetCorePoc.Api
 {
     public partial class Startup
     {

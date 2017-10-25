@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using NetCorePoc.Application.DTOs;
 using NetCorePoc.Application.Interfaces;
 
-namespace NetCorePoc.Controllers
+namespace NetCorePoc.Api.Controllers
 {
     [Authorize]
     [Route("api/[controller]")]
