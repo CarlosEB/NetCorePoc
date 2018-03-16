@@ -27,7 +27,7 @@ namespace NetCorePoc.Application.Apps
 
         public UserOutput GetUserById(int id)
         {
-            var user = _userRpo.GetWhere(w => w.Id == 1).FirstOrDefault();
+            var user = _userRpo.GetWhere(w => w.Id == id).FirstOrDefault();
             return user == null ? null : AutoMapper.Mapper.Map<UserOutput>(user);
         }
 
@@ -39,6 +39,21 @@ namespace NetCorePoc.Application.Apps
             _uow.Commit();
 
             return newUser.Id;
+        }
+
+        public bool UpdatetUser(int id, UserInput user)
+        {
+            var retrievedUser = _userRpo.GetWhere(w => w.Id == id).FirstOrDefault();
+            if (retrievedUser == null)
+                return false;
+
+            retrievedUser.Address = user.Address;
+            retrievedUser.Name = user.Name;
+            retrievedUser.UpdatedAt = DateTime.Now;
+            _userRpo.Edit(retrievedUser);
+            _uow.Commit();
+
+            return true;
         }
     }
 }

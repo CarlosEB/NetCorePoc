@@ -6,3 +6,4 @@ C:\repository\NetCorePoc\NetCorePoc.Domain\obj\Release\netcoreapp2.0\NetCorePoc.
 C:\repository\NetCorePoc\NetCorePoc.Domain\obj\Release\netcoreapp2.0\NetCorePoc.Domain.AssemblyInfo.cs
 C:\repository\NetCorePoc\NetCorePoc.Domain\obj\Release\netcoreapp2.0\NetCorePoc.Domain.dll
 C:\repository\NetCorePoc\NetCorePoc.Domain\obj\Release\netcoreapp2.0\NetCorePoc.Domain.pdb
+C:\repository\NetCorePoc\NetCorePoc.Domain\obj\Release\netcoreapp2.0\NetCorePoc.Domain.csprojResolveAssemblyReference.cache

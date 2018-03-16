@@ -10,5 +10,7 @@ namespace NetCorePoc.Application.Interfaces
         UserOutput GetUserById(int id);
 
         int InsertUser(UserInput user);
+
+        bool UpdatetUser(int id, UserInput user);
     }
 }

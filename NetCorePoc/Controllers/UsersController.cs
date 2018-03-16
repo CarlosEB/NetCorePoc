@@ -14,10 +14,9 @@ namespace NetCorePoc.Api.Controllers
 
         public UsersController(IUserAppService userApp)
         {
-            _userApp = userApp;            
+            _userApp = userApp;
         }
 
-        // GET api/values
         [HttpGet]
         public IActionResult Get()
         {
@@ -25,27 +24,27 @@ namespace NetCorePoc.Api.Controllers
             return Ok(users);
         }
 
-        // GET api/values/5
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
             return Ok(_userApp.GetUserById(id));
         }
 
-        // POST api/values
         [HttpPost]
         public IActionResult Post([FromBody]UserInput user)
         {
-            return Ok( new { Id = _userApp.InsertUser(user) });            
+            return Created(string.Empty, new { Id = _userApp.InsertUser(user) });
         }
 
-        // PUT api/values/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody]UserInput user)
+        public IActionResult Put(int id, [FromBody]UserInput user)
         {
+            if (_userApp.UpdatetUser(id, user))
+                return Ok();
+
+            return NotFound();
         }
 
-        // DELETE api/values/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {

@@ -14,7 +14,7 @@ namespace NetCorePoc.Api
         public static IWebHost BuildWebHostKestrel(string[] args) => WebHost.CreateDefaultBuilder(args)
             .UseStartup<Startup>()
             .UseKestrel()
-            .UseUrls("http://*:5000")
+            .UseUrls("http://*:5001")
             .Build();
 
         public static IWebHost BuildWebHostHttpSys(string[] args) =>
@@ -26,7 +26,7 @@ namespace NetCorePoc.Api
                     options.Authentication.AllowAnonymous = true;
                     options.MaxConnections = 100;
                     options.MaxRequestBodySize = 30000000;
-                    options.UrlPrefixes.Add("http://localhost:5000");
+                    options.UrlPrefixes.Add("http://localhost:5001");
                 })
                 .Build();
     }
