@@ -46,8 +46,12 @@ namespace NetCorePoc.Api.Controllers
         }
 
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public IActionResult Delete(int id)
         {
+            if (_userApp.DeleteUser(id))
+                return Ok();
+
+            return NotFound();
         }
     }
 }

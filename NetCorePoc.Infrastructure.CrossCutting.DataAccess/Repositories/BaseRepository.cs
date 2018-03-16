@@ -11,13 +11,12 @@ namespace NetCorePoc.Infrastructure.CrossCutting.DataAccess.Repositories
 {
     public abstract class BaseRepository<TEntity, TPrimaryKey> : IBaseRepository<TEntity, TPrimaryKey> where TEntity : BaseEntity<TPrimaryKey>
     {
-        public DomainContext Context { get; set; }        
+        public DomainContext Context { get; set; }
 
         protected BaseRepository(DomainContext context)
         {
             Context = context;
         }
-
 
         public void Dispose()
         {
@@ -60,11 +59,15 @@ namespace NetCorePoc.Infrastructure.CrossCutting.DataAccess.Repositories
             return GetWhere(exp).Count();
         }
 
-        public virtual void RemoveWhere(Expression<Func<TEntity, bool>> exp)
+        public bool RemoveWhere(Expression<Func<TEntity, bool>> exp)
         {
-            GetWhere(exp)
-                .ToList()
-                .ForEach(i => Context.Set<TEntity>().Remove(i));
+            var result = GetWhere(exp).ToList();
+
+            if (!result.Any()) return false;
+
+            result.ForEach(i => Context.Set<TEntity>().Remove(i));
+
+            return true;
         }
     }
 }

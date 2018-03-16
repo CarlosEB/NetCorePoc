@@ -21,7 +21,7 @@ namespace NetCorePoc.Domain.Interfaces.Repositories
 
         int GetTotalWhere(Expression<Func<TEntity, bool>> exp);
 
-        void RemoveWhere(Expression<Func<TEntity, bool>> exp);
+        bool RemoveWhere(Expression<Func<TEntity, bool>> exp);
     }
 
     public interface IBaseRepository<TEntity> : IBaseRepository<TEntity, int> where TEntity : IBaseEntity<int>

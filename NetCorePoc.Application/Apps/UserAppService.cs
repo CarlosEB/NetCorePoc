@@ -55,5 +55,14 @@ namespace NetCorePoc.Application.Apps
 
             return true;
         }
+
+        public bool DeleteUser(int id)
+        {
+            var result = _userRpo.RemoveWhere(r => r.Id == 1);
+            if (!result) return false;
+            _uow.Commit();
+
+            return true;
+        }
     }
 }
