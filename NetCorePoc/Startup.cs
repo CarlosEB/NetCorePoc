@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using NetCorePoc.Application.Mapper;
 using NetCorePoc.Infrastructure.CrossCutting.Security;
 
@@ -31,7 +32,7 @@ namespace NetCorePoc.Api
             services.AddMvc();
         }
 
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             if (env.IsDevelopment())
             {
@@ -41,6 +42,8 @@ namespace NetCorePoc.Api
             ConfigureJwtTokenAuthentication(app);
 
             AutoMapperApp.ConfigureAutoMapper();
+
+            loggerFactory.AddFile("Logs/NetCore-{Date}.txt");
 
             app.UseMvc();
         }

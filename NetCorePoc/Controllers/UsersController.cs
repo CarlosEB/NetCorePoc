@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using NetCorePoc.Application.DTOs;
 using NetCorePoc.Application.Interfaces;
 
@@ -12,14 +13,18 @@ namespace NetCorePoc.Api.Controllers
 
         private readonly IUserAppService _userApp;
 
-        public UsersController(IUserAppService userApp)
+        private readonly ILogger<UsersController> _logger;
+
+        public UsersController(IUserAppService userApp, ILogger<UsersController> logger)
         {
             _userApp = userApp;
+            _logger = logger;
         }
 
         [HttpGet]
         public IActionResult Get()
         {
+            _logger.LogInformation("Getting all users");
             var users = _userApp.GetUsers();
             return Ok(users);
         }
