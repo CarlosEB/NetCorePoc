@@ -6,7 +6,9 @@ using Microsoft.Extensions.Configuration;
 using NetCorePoc.Application.Apps;
 using NetCorePoc.Application.Interfaces;
 using NetCorePoc.Domain.Interfaces.Repositories;
+using NetCorePoc.Domain.Interfaces.Service;
 using NetCorePoc.Domain.Interfaces.UnitOfWork;
+using NetCorePoc.Domain.Services;
 using NetCorePoc.Infrastructure.CrossCutting.DataAccess.Context;
 using NetCorePoc.Infrastructure.CrossCutting.DataAccess.Repositories;
 using NetCorePoc.Infrastructure.CrossCutting.DataAccess.UnitOfWork;
@@ -48,6 +50,8 @@ namespace NetCorePoc.Infrastructure.CrossCutting.IoC
             _services.AddTransient<IUnitOfWork, UnitOfWork>();
 
             _services.AddTransient<IUserAppService, UserAppService>();
+
+            _services.AddTransient<IUserService, UserService>();
 
             _services.AddTransient<IUserRepository, UserRepository>();
         }

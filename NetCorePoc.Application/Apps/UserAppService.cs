@@ -1,68 +1,55 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using NetCorePoc.Application.DTOs;
 using NetCorePoc.Application.Interfaces;
 using NetCorePoc.Domain.Entities;
-using NetCorePoc.Domain.Interfaces.Repositories;
-using NetCorePoc.Domain.Interfaces.UnitOfWork;
+using NetCorePoc.Domain.Interfaces.Service;
 
 namespace NetCorePoc.Application.Apps
 {
     public class UserAppService : IUserAppService
     {
-        private readonly IUserRepository _userRpo;
-        private readonly IUnitOfWork _uow;
+        private readonly IUserService _userService;        
 
-        public UserAppService(IUserRepository userRepo, IUnitOfWork uow)
+        public UserAppService(IUserService userService)
         {
-            _userRpo = userRepo;
-            _uow = uow;
+            _userService = userService;            
         }
 
-        public IEnumerable<UserOutput> GetUsers()
+        public IEnumerable<UserResponse> GetUsers()
         {
-            return AutoMapper.Mapper.Map<IEnumerable<UserOutput>>(_userRpo.GetAll());
+            return AutoMapper.Mapper.Map<IEnumerable<UserResponse>>(_userService.GetUsers());
         }
 
-        public UserOutput GetUserById(int id)
+        public UserResponse GetUserById(int id)
         {
-            var user = _userRpo.GetWhere(w => w.Id == id).FirstOrDefault();
-            return user == null ? null : AutoMapper.Mapper.Map<UserOutput>(user);
+            var user = _userService.GetUserById(id);
+            return user == null ? null : AutoMapper.Mapper.Map<UserResponse>(user);
         }
 
-        public int InsertUser(UserInput user)
+        public int InsertUser(UserRequest user)
         {
             var newUser = AutoMapper.Mapper.Map<User>(user);
-            newUser.CreatedAt = DateTime.Now;
-            _userRpo.Create(newUser);
-            _uow.Commit();
-
+            _userService.InsertUser(newUser);
+            
             return newUser.Id;
         }
 
-        public bool UpdatetUser(int id, UserInput user)
+        public bool UpdatetUser(int id, UserRequest user)
         {
-            var retrievedUser = _userRpo.GetWhere(w => w.Id == id).FirstOrDefault();
-            if (retrievedUser == null)
-                return false;
+            var updatetUser = new User
+            {
+                Address = user.Address,
+                Name = user.Name
+            };
 
-            retrievedUser.Address = user.Address;
-            retrievedUser.Name = user.Name;
-            retrievedUser.UpdatedAt = DateTime.Now;
-            _userRpo.Edit(retrievedUser);
-            _uow.Commit();
-
-            return true;
+            return _userService.UpdatetUser(id, updatetUser);
         }
 
         public bool DeleteUser(int id)
         {
-            var result = _userRpo.RemoveWhere(r => r.Id == 1);
-            if (!result) return false;
-            _uow.Commit();
-
-            return true;
+            
+            return _userService.DeleteUser(id);
         }
     }
 }

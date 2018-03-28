@@ -5,13 +5,13 @@ namespace NetCorePoc.Application.Interfaces
 {
     public interface IUserAppService
     {
-        IEnumerable<UserOutput> GetUsers();
+        IEnumerable<UserResponse> GetUsers();
 
-        UserOutput GetUserById(int id);
+        UserResponse GetUserById(int id);
 
-        int InsertUser(UserInput user);
+        int InsertUser(UserRequest user);
 
-        bool UpdatetUser(int id, UserInput user);
+        bool UpdatetUser(int id, UserRequest user);
 
         bool DeleteUser(int id);
     }

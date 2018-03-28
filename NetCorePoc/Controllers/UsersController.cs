@@ -36,13 +36,13 @@ namespace NetCorePoc.Api.Controllers
         }
 
         [HttpPost]
-        public IActionResult Post([FromBody]UserInput user)
+        public IActionResult Post([FromBody]UserRequest user)
         {
             return Created(string.Empty, new { Id = _userApp.InsertUser(user) });
         }
 
         [HttpPut("{id}")]
-        public IActionResult Put(int id, [FromBody]UserInput user)
+        public IActionResult Put(int id, [FromBody]UserRequest user)
         {
             if (_userApp.UpdatetUser(id, user))
                 return Ok();

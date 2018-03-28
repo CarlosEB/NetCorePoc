@@ -8,8 +8,8 @@ namespace NetCorePoc.Application.Mapper
         public static void ConfigureAutoMapper()
         {
             AutoMapper.Mapper.Initialize(cfg => {
-                cfg.CreateMap<User, UserOutput>();
-                cfg.CreateMap<UserInput, User>();
+                cfg.CreateMap<User, UserResponse>();
+                cfg.CreateMap<UserRequest, User>();
             });
         }
     }
