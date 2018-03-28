@@ -26,7 +26,7 @@ namespace NetCorePoc.Domain.Services
 
         public User GetUserById(int id)
         {
-            return _userRepository.GetWhere(w => w.Id == id).FirstOrDefault();            
+            return _userRepository.Details(id);
         }
 
         public int InsertUser(User newUser)
