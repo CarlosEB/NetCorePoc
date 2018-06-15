@@ -8,6 +8,9 @@ namespace NetCorePoc.Api.Controllers
 {
     [Authorize]
     [Route("api/[controller]")]
+    /// <summary>
+    /// Controller used to handle users.
+    /// </summary>
     public class UsersController : Controller
     {
 
@@ -22,6 +25,9 @@ namespace NetCorePoc.Api.Controllers
         }
 
         [HttpGet]
+        /// <summary>
+        /// Get all users.
+        /// </summary>
         public IActionResult Get()
         {
             _logger.LogInformation("Getting all users");
@@ -29,6 +35,10 @@ namespace NetCorePoc.Api.Controllers
             return Ok(users);
         }
 
+        /// <summary>
+        /// Get user by ID.
+        /// </summary>
+        /// <param name="id"></param>  
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
@@ -36,11 +46,20 @@ namespace NetCorePoc.Api.Controllers
         }
 
         [HttpPost]
+        /// <summary>
+        /// Add new user
+        /// </summary>
+        /// <param name="id"></param> 
         public IActionResult Post([FromBody]UserRequest user)
         {
             return Created(string.Empty, new { Id = _userApp.InsertUser(user) });
         }
 
+        /// <summary>
+        /// Update user by Id
+        /// </summary>
+        /// <param name="id"></param>  
+        /// <param name="user"></param>  
         [HttpPut("{id}")]
         public IActionResult Put(int id, [FromBody]UserRequest user)
         {
@@ -50,6 +69,10 @@ namespace NetCorePoc.Api.Controllers
             return NotFound();
         }
 
+        /// <summary>
+        /// Delete user by Id
+        /// </summary>
+        /// <param name="id"></param>  
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
