@@ -6,11 +6,11 @@ using NetCorePoc.Application.Interfaces;
 
 namespace NetCorePoc.Api.Controllers
 {
-    [Authorize]
-    [Route("api/[controller]")]
     /// <summary>
     /// Controller used to handle users.
     /// </summary>
+    [Authorize]
+    [Route("api/[controller]")]
     public class UsersController : Controller
     {
 
@@ -18,16 +18,21 @@ namespace NetCorePoc.Api.Controllers
 
         private readonly ILogger<UsersController> _logger;
 
+        /// <summary>
+        /// Constructor class
+        /// </summary>
+        /// <param name="userApp"></param>
+        /// <param name="logger"></param>
         public UsersController(IUserAppService userApp, ILogger<UsersController> logger)
         {
             _userApp = userApp;
             _logger = logger;
         }
 
-        [HttpGet]
         /// <summary>
         /// Get all users.
         /// </summary>
+        [HttpGet]
         public IActionResult Get()
         {
             _logger.LogInformation("Getting all users");
@@ -45,11 +50,11 @@ namespace NetCorePoc.Api.Controllers
             return Ok(_userApp.GetUserById(id));
         }
 
-        [HttpPost]
         /// <summary>
         /// Add new user
         /// </summary>
-        /// <param name="id"></param> 
+        /// <param name="user"></param> 
+        [HttpPost]
         public IActionResult Post([FromBody]UserRequest user)
         {
             return Created(string.Empty, new { Id = _userApp.InsertUser(user) });
